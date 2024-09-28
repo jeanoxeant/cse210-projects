@@ -38,11 +38,13 @@ class Program
 
         string userAnswer = "yes";
 
+        
+
         while (userAnswer == "yes")
         {
             Console.Write("Do you want to play again? ");
             userAnswer = Console.ReadLine();
-
+            
             do
             {
                 Console.Write("What is your guess? ");
@@ -64,11 +66,7 @@ class Program
                             
             }while (userNumber != magic);
             Console.WriteLine($"You have guessed the magic number: {counter} times."); 
-            Console.WriteLine();
-        }
-            
-
-            
-                   
+            Console.WriteLine();   
+        }              
     }
 }
